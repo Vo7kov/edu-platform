@@ -1,0 +1,247 @@
+.container-authorization {
+  width: auto;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 50px 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.block-logo-page-login {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+img.logo-page-login {
+  width: 70px;
+  height: 70px;
+}
+
+.block-authorization {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 55px;
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.blocks-authorization-indentation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title-input-text {
+  color: #3e4264;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.block-input-data {
+  width: 100%;
+  height: 82px;
+  border-radius: 15px;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  border: none;
+  border: 2px solid #ebedfe;
+}
+
+input.block-input-data:focus {
+  border-color: #6a67dc;
+  outline: none;
+}
+
+.remember-block {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-remember {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #6a67dc;
+  border-radius: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.checkbox-remember--active {
+  background-color: rgb(106, 103, 220);
+}
+
+.checkbox-remember:hover {
+  background-color: #c3c9fb;
+  border: 2px solid #3532bb;
+}
+
+.checkbox-page-authorization {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 2px;
+  display: none;
+}
+
+.checkbox-page-authorization--active {
+  display: block;
+}
+
+span.checkbox-remember-text {
+  color: #3e4264;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.block-button-authorization {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+a.custom-button {
+  display: inline-block;
+  width: 342px;
+  height: 53px;
+  border-radius: 10px;
+  line-height: 53px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+a.custom-button1 {
+  background-color: #6a67dc;
+  color: #ffffff;
+}
+
+a.custom-button1:hover {
+  background-color: #5450d9;
+  font-weight: 600;
+}
+
+a.custom-button2 {
+  color: #6a67dc;
+}
+
+a.custom-button2:hover {
+  background-color: #d4d7f1;
+  font-weight: 600;
+}
+
+.support-position {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .block-logo-page-login {
+    margin-bottom: 30px;
+  }
+
+  .container-authorization {
+    padding: 15px 15px;
+    gap: 30px;
+  }
+
+  img.logo-page-login {
+    width: 40px;
+    height: 40px;
+  }
+
+  .block-authorization {
+    border-radius: 15px;
+    padding: 30px 20px;
+  }
+
+  .title-input-text {
+    font-size: 14px;
+  }
+
+  .block-input-data {
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px 10px;
+  }
+
+  .checkbox-remember {
+    width: 24px;
+    height: 24px;
+  }
+
+  .block-button-authorization {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  a.custom-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .button-text-authorization {
+    font-size: 14px;
+  }
+}
+
+/* LANDSCAPE MODE */
+@media (min-width: 480px) and (max-width: 720px) {
+  .container-authorization {
+    padding: 50px 50px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 720px) and (max-width: 1024px) {
+  .container-authorization {
+    padding: 50px 80px;
+  }
+}
+
+/* LAPTOP */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container-authorization {
+    padding: 50px 110px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-authorization {
+    padding: 50px 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .support-position {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

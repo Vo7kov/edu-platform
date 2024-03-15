@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  /*box-sizing: border-box;*/
+  text-decoration: none;
+  /*font-family: 'Poppins', sans-serif;*/
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  background-color: #E8E9EF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: auto;
+  height: 100vh;
+  overflow-y: auto;
+  margin: 0px 15px;
+  padding: 50px 35px;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Прокрутка головної сторінки */
+.container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #C6CFE1;
+  border-radius: 3px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  margin: 40px 0px 40px 0px;
+}
+
+/* Імпортування контенту з інших сторінок html */
+iframe {
+  width: 100%;
+  border: none;
+}
+
+iframe.main-menu-block {
+  height: 100vh;
+}
+
+iframe.information-menu-block {
+  height: 100vh;
+}
+
+iframe.burger-menu-block {
+  height: auto;
+}
+
+.page-content-background {
+  background-color: #E8E9EF;
+  height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .container {
+      padding: 15px 15px;
+  }
+}
+
+/* LANDSCAPE MODE */
+@media (min-width: 480px) and (max-width: 720px) {
+  .container {
+      padding: 40px 50px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 720px) and (max-width: 1024px) {
+  .container {
+      padding: 40px 80px;
+  }
+}
+
+/* LAPTOP */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container {
+      padding: 40px 90px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+      margin: 0px 0px;
+  }
+
+  iframe.main-menu-block {
+      display: none;
+  }
+
+  iframe.information-menu-block {
+      display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  iframe.burger-menu-block {
+      display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container::-webkit-scrollbar {
+      display: none;
+  }
+
+  .container {
+      height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+/* Блоки, які необхідно винести в окремі файли html коли буде хостинг */
+.search-menu {
+  width: 55%;
+  height: 50px;
+  background-color: #F6F7F8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-button-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #D8DEE8;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0px 10px 0px 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ABABAB;
+}
+
+.search-text {
+  margin-left: 10px;
+  color: #747FA0;
+  text-transform: capitalize;
+}
+
+.current-date-header {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  color: #747FA0;
+}
+
+.date-text {
+  text-transform: lowercase;
+}
+
+.reminders_mobile {
+  display: none;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  /* Меню пошуку */
+  .search-menu {
+    height: 25px;
+    border-radius: 5px;
+  }
+
+  .search-button-icon {
+    width: 25px;
+    height: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+  .search-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .search-input {
+    font-size: 12px;
+  }
+
+  .current-date-header {
+    font-size: 11px;
+  }
+}
