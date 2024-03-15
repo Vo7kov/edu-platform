@@ -14,6 +14,11 @@
 
 .page-content {
   color: #3e4264;
+  display: none;
+}
+
+.page-content--active {
+  display: block;
 }
 
 .main_blocks2 {
@@ -68,7 +73,7 @@ a.circle:hover {
   background-color: #ebedfe;
 }
 
-.circle.active {
+.circle--active {
   background-color: #d8dee8;
 }
 

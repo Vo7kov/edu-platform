@@ -1,0 +1,40 @@
+.discipline-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.labels2 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+@media (min-width: 720px) and (max-width: 1440px) {
+  .table {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .labels2 {
+    gap: 10px;
+  }
+
+  .discipline-block {
+    gap: 5px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 480px) and (max-width: 720px) {
+  .labels2 {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  .labels2 {
+    gap: 15px;
+  }
+}
