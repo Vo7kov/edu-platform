@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import BurgerMenu from '@/components/BurgerMenu/BurgerMenu';
+import InformationMenu from '@/components/InformationMenu/InformationMenu';
 import MainMenu from '@/components/MainMenu/MainMenu';
 
 import avatar1 from '../assets/avatars/avatar1.png';
@@ -532,7 +533,9 @@ const Home: React.FC = React.memo(() => {
           </div>
         </div>
 
-        {/* <iframe src="information_menu.html" className="information-menu-block"></iframe> */}
+        <div className="information-menu-block">
+          <InformationMenu />
+        </div>
       </div>
     </div>
   );

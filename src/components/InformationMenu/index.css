@@ -1,0 +1,235 @@
+/* Вікно інформації про студента/викладача */
+.information {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  border-radius: 60px 0px 0px 60px;
+  height: 100vh;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.photo {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+}
+
+.title-profile-name {
+  color: #383763;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.title-profile-job {
+  color: #383763;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+a.profile-button {
+  display: inline-block;
+  width: 137px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #678adb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 23px;
+  margin-top: 15px;
+}
+
+a.profile-button:hover {
+  background-color: #6767db;
+}
+
+.title-information {
+  font-size: 18px;
+  font-weight: 500;
+  color: #383763;
+}
+
+.title-information-bottom {
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+
+header .icons {
+  display: flex;
+}
+
+header .icons span {
+  height: 38px;
+  width: 38px;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #747fa0;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 10px;
+  border: 1px solid #d8dee8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .icons span:hover {
+  background: #d8dee8;
+  color: #ffffff;
+  border: 1px solid #a2aab8;
+}
+
+header .current-date {
+  overflow: hidden;
+}
+
+.calendar {
+  box-sizing: border-box;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.calendar .days {
+  grid-row-gap: 10px;
+}
+
+.calendar li {
+  color: #747fa0;
+  width: calc(100% / 7);
+  height: 24px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #4d597e;
+}
+
+.days li.inactive {
+  color: #dedede;
+}
+
+.days li.active {
+  color: #fff;
+  background: #678adb;
+  border-radius: 5px;
+}
+
+.days li::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  height: 24px;
+  width: 24px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+  background: #9b59b6;
+}
+
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+
+.reminders {
+  display: flex;
+  flex-direction: column;
+}
+
+.reminder-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rem_block {
+  display: flex;
+  opacity: 1;
+}
+
+.rem_block:last-child {
+  opacity: 0.5;
+}
+
+.rem_block_content {
+  display: flex;
+  align-items: center;
+}
+
+.rem-button {
+  width: 40px;
+  height: 40px;
+  background-color: #edf2ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.rem_icon {
+  width: 23px;
+  height: 23px;
+}
+
+.rem_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.rem_block_title {
+  color: #5957be;
+  font-size: 14px;
+}
+
+.rem_block_info {
+  font-size: 11px;
+  color: gray;
+}

@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
 
+import InformationMenu from '@/components/InformationMenu/InformationMenu';
 import MainMenu from '@/components/MainMenu/MainMenu';
 
 import burgerIcon from '../../assets/burger_menu.svg';
@@ -58,7 +59,7 @@ const BurgerMenu: React.FC = React.memo(() => {
         >
           {isMainMenuOpened && <MainMenu />}
 
-          {isInformationMenuOpened && <MainMenu />}
+          {isInformationMenuOpened && <InformationMenu />}
         </div>
       </div>
     </section>
