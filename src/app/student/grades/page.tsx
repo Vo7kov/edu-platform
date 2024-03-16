@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
 
+import BurgerMenu from '@/components/BurgerMenu/BurgerMenu';
 import MainMenu from '@/components/MainMenu/MainMenu';
 
 import infoMenu from '../../../assets/information_menu.svg';
@@ -17,10 +18,9 @@ const StudentGrades: React.FC = React.memo(() => {
 
   return (
     <div className="page-content-background">
-      {/* <iframe
-        src="burger_menu.html"
-        className="burger-menu-block"
-      ></iframe> */}
+      <div className="burger-menu-block">
+        <BurgerMenu />
+      </div>
 
       <div className="main_blocks2">
         <div className="main-menu-block">

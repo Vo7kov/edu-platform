@@ -3,6 +3,7 @@ import React from 'react';
 
 import Image from 'next/image';
 
+import BurgerMenu from '@/components/BurgerMenu/BurgerMenu';
 import MainMenu from '@/components/MainMenu/MainMenu';
 
 import avatar from '../../assets/avatars/photo.png';
@@ -13,7 +14,9 @@ import './index.css';
 const Profile: React.FC = React.memo(() => {
   return (
     <div className="page-content-background">
-      {/* <iframe src="burger_menu.html" className="burger-menu-block"></iframe> */}
+      <div className="burger-menu-block">
+        <BurgerMenu />
+      </div>
 
       <div className="main_blocks2">
         <div className="main-menu-block">
