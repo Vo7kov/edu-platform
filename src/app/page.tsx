@@ -3,6 +3,8 @@ import React from 'react';
 
 import Image from 'next/image';
 
+import MainMenu from '@/components/MainMenu/MainMenu';
+
 import avatar1 from '../assets/avatars/avatar1.png';
 import avatar2 from '../assets/avatars/avatar2.png';
 import avatar3 from '../assets/avatars/avatar3.png';
@@ -26,10 +28,7 @@ const Home: React.FC = React.memo(() => {
       ></iframe> */}
 
       <div className="main_blocks">
-        {/* <iframe
-          src="main_menu.html"
-          className="main-menu-block"
-        ></iframe> */}
+        <MainMenu />
 
         <div className="container">
           <div className="header bottom-indent">

@@ -14,7 +14,7 @@ body {
   padding: 0;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
-  background-color: #E8E9EF;
+  background-color: #e8e9ef;
 }
 
 a {
@@ -44,36 +44,28 @@ a {
 }
 
 .container::-webkit-scrollbar-thumb {
-  background-color: #C6CFE1;
+  background-color: #c6cfe1;
   border-radius: 3px;
 }
 
 .container::-webkit-scrollbar-track {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 3px;
   margin: 40px 0px 40px 0px;
 }
 
 /* Імпортування контенту з інших сторінок html */
-iframe {
-  width: 100%;
-  border: none;
-}
-
-iframe.main-menu-block {
+.main-menu-block,
+.information-menu-block {
   height: 100vh;
 }
 
-iframe.information-menu-block {
-  height: 100vh;
-}
-
-iframe.burger-menu-block {
+.burger-menu-block {
   height: auto;
 }
 
 .page-content-background {
-  background-color: #E8E9EF;
+  background-color: #e8e9ef;
   height: 100%;
 }
 
@@ -82,73 +74,63 @@ iframe.burger-menu-block {
 /* MOBILE */
 @media (max-width: 480px) {
   .container {
-      padding: 15px 15px;
+    padding: 15px 15px;
   }
 }
 
 /* LANDSCAPE MODE */
 @media (min-width: 480px) and (max-width: 720px) {
   .container {
-      padding: 40px 50px;
+    padding: 40px 50px;
   }
 }
 
 /* TABLET */
 @media (min-width: 720px) and (max-width: 1024px) {
   .container {
-      padding: 40px 80px;
+    padding: 40px 80px;
   }
 }
 
 /* LAPTOP */
 @media (min-width: 1024px) and (max-width: 1440px) {
   .container {
-      padding: 40px 90px;
+    padding: 40px 90px;
   }
 }
 
 @media (max-width: 1440px) {
   .container {
-      margin: 0px 0px;
+    margin: 0px 0px;
   }
 
-  iframe.main-menu-block {
-      display: none;
-  }
-
-  iframe.information-menu-block {
-      display: none;
+  .main-menu-block,
+  .information-menu-block {
+    display: none !important;
   }
 }
 
 @media (min-width: 1440px) {
-  iframe.burger-menu-block {
-      display: none;
+  .burger-menu-block {
+    display: none;
   }
 }
 
 @media (max-width: 1440px) {
   .container::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
 
   .container {
-      height: auto;
+    height: auto;
   }
 }
-
-
-
-
-
-
-
 
 /* Блоки, які необхідно винести в окремі файли html коли буде хостинг */
 .search-menu {
   width: 55%;
   height: 50px;
-  background-color: #F6F7F8;
+  background-color: #f6f7f8;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -157,7 +139,7 @@ iframe.burger-menu-block {
 .search-button-icon {
   width: 50px;
   height: 50px;
-  background-color: #D8DEE8;
+  background-color: #d8dee8;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   display: flex;
@@ -178,12 +160,12 @@ iframe.burger-menu-block {
   padding: 0px 10px 0px 10px;
   font-size: 16px;
   font-weight: 400;
-  color: #ABABAB;
+  color: #ababab;
 }
 
 .search-text {
   margin-left: 10px;
-  color: #747FA0;
+  color: #747fa0;
   text-transform: capitalize;
 }
 
@@ -191,7 +173,7 @@ iframe.burger-menu-block {
   font-size: 16px;
   font-weight: 600;
   text-align: right;
-  color: #747FA0;
+  color: #747fa0;
 }
 
 .date-text {
@@ -215,7 +197,7 @@ iframe.burger-menu-block {
     height: 25px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-}
+  }
 
   .search-icon {
     width: 10px;
