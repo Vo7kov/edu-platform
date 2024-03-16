@@ -102,27 +102,22 @@ a {
 @media (max-width: 1440px) {
   .container {
     margin: 0px 0px;
+    height: auto;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
   }
 
   .main-menu-block,
   .information-menu-block {
-    display: none !important;
+    display: none;
   }
 }
 
 @media (min-width: 1440px) {
   .burger-menu-block {
     display: none;
-  }
-}
-
-@media (max-width: 1440px) {
-  .container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .container {
-    height: auto;
   }
 }
 

@@ -6,10 +6,11 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
 
+import MainMenu from '@/components/MainMenu/MainMenu';
+
 import infoMenu from '../../../assets/information_menu.svg';
 import '../../general-styles-menu-pages.css';
 import './index.css';
-import MainMenu from '@/components/MainMenu/MainMenu';
 
 const StudentRating: React.FC = React.memo(() => {
   const [activePage, setActivePage] = useState(0);
@@ -23,7 +24,9 @@ const StudentRating: React.FC = React.memo(() => {
       ></iframe> */}
 
       <div className="main_blocks2">
-        <MainMenu />
+        <div className="main-menu-block">
+          <MainMenu />
+        </div>
 
         <div className="container">
           <div className="header2 bottom-indent2">

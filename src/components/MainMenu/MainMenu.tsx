@@ -41,7 +41,7 @@ const MainMenu: React.FC = React.memo(() => {
   ];
 
   return (
-    <div className="menu main-menu-block">
+    <div className="menu">
       <a href="index.html">
         <Image src={logoWhite as string} alt="logo" className="logo" />
       </a>
